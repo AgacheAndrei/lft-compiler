@@ -1,0 +1,44 @@
+A=2*5;
+b=20;
+C=30;
+d=80/2;
+
+
+
+if(a>9)
+	write a;
+//se afiseaza 10
+
+
+if(b>20)
+	write b;
+else 
+	write a;
+//se afiseaza 10
+	
+	
+while(c<35)
+{ 	
+	
+	b=c++;
+	write b;
+	
+	
+}
+// se afiseaza 30 31 32 33 34
+
+
+
+
+do
+{
+	write d;
+	d--;
+}while(d>37);
+
+/*se afiseaza 40 39 38*/
+
+for(E=2;E<=5;E++)
+	write E;
+	
+//se afiseaza 2 3 4 5
