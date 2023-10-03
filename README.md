@@ -1,7 +1,48 @@
 # Numerical compiler + interpretativ functions
 ## What this code does
-A compiler for numerical expressions, conditions and loops, C, Flex(Lex), Bison(Yacc) with interpretativ functions and graf/text outputs.
+A compiler💻 for numerical expressions, conditions and loops, C, Flex(Lex), Bison(Yacc) with interpretativ functions and graf/text outputs.
+### Note: This is one of the hardest projects I ever did for uni. I lost some brain cells for sure !
+## The topic from my teacher
+<pre>
+To create (using flex and bison) a calculator for expressions (interpretative variant and graphic display of the syntactic analysis tree) in which the operands are: 
+ -identifiers (consisting of a single character - upper or lower case letter) and string literals (framed ). between "", as in C). 
+Printable characters and escape characters are allowed. Expressions can be composed (several operands and operators) and allow the use of round brackets.
 
+The declarations of the identifiers are of the form:
+a = "abc";
+b = "bnj", c="jjj";
+
+For each expression, both the value of the evaluated expression and the associated syntactic tree will be displayed, in GRAPHIC mode (see version C in the study material for the project!)
+
+The operations on character strings are:
+🪨 ++ - prefixed and postfixed form, increments the first character in the string (++"bnh" = "cnh")
+🪨 -- prefixed and postfixed form, decrements the first character in the string (--bnh = anh)
+🪨 ^ converts uppercase letters to lowercase and vice versa (^"abGn" = "ABgN")
+🪨 ~str returns the length of the str string
+🪨 * performs the multiplication of a string: str1*n =str2, where str2 is str1 multiplied n times (n is a natural number different from 0) ("ab"*3="ababab")
+🪨 / returns a number of characters from the end of a character string: if it is not a natural number and str is a string, str/n returns the string consisting of the last n characters of the string ("abcd"/3="bcd")
+🪨 # returns a number of characters from the beginning of a character string: if it is not a natural number and str is a string, str#n returns the string consisting of the first n characters of the string ("abcd"#3="abc").
+🪨 + performs string concatenation (example: "ab"+"cd" ="abcd")
+🪨 - performs the string difference: if str2 is included in str1, then str1-str2 is the string obtained by removing the substring str2 from str1: ("abcde"-"bc"="ade")
+🪨 == performs the comparison between two character strings: str1 == str2 returns the value 1, if str1 is equal to str2, 0 otherwise.
+🪨 != performs the comparison between two character strings: str1 != str2 returns the value 1, if str1 is different from str2, 0 otherwise.
+🪨 >, >= lexicographically compares 2 strings, returns 1 if the condition is met, 0 otherwise ("abc">="mnpp" is 0)
+🪨 <, <= lexicographically compares 2 strings, returns 1 if the condition is met, 0 otherwise ("abc"<"mnpp" is 1)
+
+For the maximum mark - dealing with situations: 🥇🥇🥇
+A string can have in its component the character " or \
+A string can have in its component characters represented by the octal code.
+
+Operator priority and associativity rules:
+The operators are given in descending order of priority:
+Unary operators (++, --, ~, ^) same priority, right associativity
+Binary operators (*, /, #) same priority, left associativity
+Binary operators (+, -) same priority, left associativity
+Relational operators (==, !=, >, >=, <, <=) same priority, least priority, right associativity
+
+Examples of assessment:
+~(“abc”+”HM”) displays 5
+</pre>
 ### Programing languages and technology used
 
 <img align="left" width="30px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gcc/gcc-original.svg" /> 
